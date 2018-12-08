@@ -7,7 +7,7 @@
  */
 namespace DataBase {
 
-    class dbMySQLColumn
+    class MySQLColumn
     {
         public $columnName;
         public $columnDataType;
@@ -18,15 +18,6 @@ namespace DataBase {
         private $isRequiredDataSize=false;
 
         public $columnDataProperties;
-
-        /*public $columnDataSize;
-        public $isPrimary;
-        public $isAutoIncrement;
-        public $isUnique;
-        public $isNull;
-        public $Default;
-        public $Check;
-        public $ForeignKey;*/
 
         public $isValid=false;
 
@@ -57,6 +48,38 @@ namespace DataBase {
             }
             elseif (in_array($this->columnDataType,$this->columnDateDataTypes)){
                 $result=true;
+            }
+            return $result;
+        }
+
+        /*public $columnDataSize;
+        public $isPrimary;
+        public $isAutoIncrement;
+        public $isUnique;
+        public $isNull;
+        public $Default;
+        public $Check;
+        public $ForeignKey;*/
+
+        public function getSQL(){
+            $result='';
+            if($this->DataTypeVerification())
+            {
+                $result=$result.$this->formatColumnName()." ".$this->columnDataType;
+                if ($this->isRequiredDataSize)
+                    $result=$result.'('.$this->columnDataProperties->columnDataSize.')';
+                if ($this->columnDataProperties->isPrimary)
+                    $result=$result.' PRIMARY KEY';
+                if ($this->columnDataProperties->isAutoIncrement)
+                    $result=$result.' AUTO_INCREMENT';
+                if (!$this->columnDataProperties->isNull)
+                    $result=$result.' NOT NULL';
+                if ($this->columnDataProperties->isUnique)
+                    $result=$result.' UNIQUE';
+                if ($this->columnDataProperties->Default)
+                    $result=$result.' '.$this->columnDataProperties->Default;
+                if ($this->columnDataProperties->Check)
+                    $result=$result.' '.$this->columnDataProperties->Check;
             }
             return $result;
         }
