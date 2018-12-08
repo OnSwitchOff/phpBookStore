@@ -8,6 +8,9 @@
     ],
     "require": {},
     "autoload": {
-        "psr-4": {"Acme\\": "classes/"}
+        "psr-4": {
+            "Acme\\": "classes/",
+            "DataBase\\": "DataBase/"
+        }
     }
 }

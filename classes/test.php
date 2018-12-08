@@ -5,14 +5,15 @@
  * Date: 08.12.2018
  * Time: 17:13
  */
-namespace Acme;
+namespace Acme {
 
-class test
-{
-    public $helloStr;
-
-    function __construct()
+    class test
     {
-        $this->helloStr="Hello! All";
+        public $helloStr;
+
+        function __construct()
+        {
+            $this->helloStr="Hello! All";
+        }
     }
 }
