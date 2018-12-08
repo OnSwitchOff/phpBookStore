@@ -2,8 +2,8 @@
 require __DIR__ . '/vendor/autoload.php';
 
 use Acme\test;
-use DataBase\columnDataProperties;
-use DataBase\MySQLColumn;
+use Acme\columnDataProperties;
+
 
 $obj1=new test();
 echo $obj1->helloStr;
@@ -16,7 +16,7 @@ $replacement='';
 
 echo preg_replace($regExp, $replacement, $testString);
 
-echo '\n';
+echo "\n";
 
 $colProp=new columnDataProperties(true);
 $column1=new  MySQLColumn('id','INT',$colProp);
