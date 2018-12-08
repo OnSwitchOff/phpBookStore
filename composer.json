@@ -1,0 +1,13 @@
+{
+    "name": "onswitchoff/book-db-store",
+    "authors": [
+        {
+            "name": "OnSwitchOff",
+            "email": "kassov@ukr.net"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"Acme\\": "classes/"}
+    }
+}
