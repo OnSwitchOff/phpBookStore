@@ -5,7 +5,7 @@
  * Date: 08.12.2018
  * Time: 17:38
  */
-namespace DataBase2 {
+namespace DataBase {
 
     class MySQLColumn
     {
