@@ -4,8 +4,6 @@
     <list default="true" id="10456c84-9798-4bbe-aafe-65e72eee0e70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataBase/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/DB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/MySqlTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/MySqlTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,11 +39,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataBase/DB.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="64" column="47" lean-forward="true" selection-start-line="64" selection-start-column="47" selection-end-line="64" selection-end-column="47" />
+            <state relative-caret-position="153">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+              <folding>
+                <element signature="e#121#130#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataBase/MySQLColumn.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="119">
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -62,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataBase/columnDataProperties.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state relative-caret-position="272">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding>
                 <element signature="e#6#93#0#PHP" expanded="true" />
               </folding>
@@ -71,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="850">
+              <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
               <folding>
                 <element signature="e#49#63#0#PHP" expanded="true" />
               </folding>
@@ -86,7 +87,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataBase/MySqlTable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="1003">
               <caret line="64" column="43" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
               <folding>
                 <marker date="1544364273979" expanded="true" signature="2354:2398" ph="..." />
@@ -118,8 +119,8 @@
         <option value="$PROJECT_DIR$/classes/MySQLColumn.php" />
         <option value="$PROJECT_DIR$/DataBase/MySQLColumn.php" />
         <option value="$PROJECT_DIR$/DataBase/MySqlTable.php" />
-        <option value="$PROJECT_DIR$/DataBase/DB.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/DataBase/DB.php" />
       </list>
     </option>
   </component>
@@ -141,7 +142,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,11 +163,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test-quest-master" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
@@ -206,7 +207,8 @@
       <workItem from="1544280537695" duration="108000" />
       <workItem from="1544280735733" duration="12754000" />
       <workItem from="1544293553939" duration="4350000" />
-      <workItem from="1544357440971" duration="8518000" />
+      <workItem from="1544357440971" duration="9994000" />
+      <workItem from="1544372744186" duration="1264000" />
     </task>
     <task id="LOCAL-00001" summary="1st-create">
       <created>1544278554345</created>
@@ -278,21 +280,28 @@
       <option name="project" value="LOCAL" />
       <updated>1544362556640</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="DBColumns-class">
+      <created>1544366927352</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1544366927352</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27091000" />
+    <option name="totallyTimeSpent" value="29831000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16944024" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17170954" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -301,7 +310,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4984448" weight="0.32843137" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49621785" visible="true" weight="0.32843137" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49621785" weight="0.32843137" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50378215" side_tool="true" weight="0.32843137" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32843137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -324,33 +333,6 @@
     <entry file="file://$PROJECT_DIR$/DataBase/MyS2QLColumn.class.php" />
     <entry file="file://$PROJECT_DIR$/classes/columnDataProperties.php" />
     <entry file="file://$PROJECT_DIR$/classes/MySQLColumn.php" />
-    <entry file="file://$PROJECT_DIR$/DataBase/columnDataProperties.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <element signature="e#6#93#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataBase/MySqlTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="64" column="43" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
-          <folding>
-            <marker date="1544364273979" expanded="true" signature="2354:2398" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataBase/MySQLColumn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -368,19 +350,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataBase/DB.php">
+    <entry file="file://$PROJECT_DIR$/DataBase/MySQLColumn.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="64" column="47" lean-forward="true" selection-start-line="64" selection-start-column="47" selection-end-line="64" selection-end-column="47" />
+        <state relative-caret-position="119">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataBase/columnDataProperties.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="e#6#93#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="850">
+          <caret line="50" column="23" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
           <folding>
             <element signature="e#49#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataBase/MySqlTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="64" column="43" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
+          <folding>
+            <marker date="1544364273979" expanded="true" signature="2354:2398" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataBase/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="e#121#130#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
