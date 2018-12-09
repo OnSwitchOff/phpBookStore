@@ -47,6 +47,28 @@ namespace DataBase {
             }
         }
 
+        public function selectAll($table){
+            try{
+                $sth = $this->dbh->prepare($table->selectAllSql());
+                var_dump($sth->execute());
+                $result = $sth->fetchAll();
+                print_r($result);
+            }catch (PDOException $e) {
+                print "Error!: " . $e->getMessage() . "<br/>";
+                die();
+            }
+        }
+
+        public function insertRow($table,$values){
+            try{
+                $sth = $this->dbh->prepare($table->insertRowSql());
+                var_dump($sth->execute($values));
+            }catch (PDOException $e) {
+                print "Error!: " . $e->getMessage() . "<br/>";
+                die();
+            }
+        }
+
         /**
          * @return string
          */

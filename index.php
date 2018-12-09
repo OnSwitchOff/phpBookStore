@@ -42,5 +42,12 @@ var_dump($table->createTableSql());
 echo "</pre>";
 
 $db->createTable($table);
+
+$values=[5];
+$db->insertRow($table,$values);
+echo "<pre>";
+$db->selectAll($table);
+echo "</pre>";
 $db->dropTable($table);
+
 ?>

@@ -52,8 +52,33 @@ class MySqlTable
         return $result;
     }
 
+    public function insertRowSql(){
+        $result="";
+        if (count($this->columnList)){
+            $result="INSERT ".$this->tableName." (";
+            foreach ( $this->columnList as $column) {
+
+                if (!$column->columnDataProperties->isPrimary) {
+                    $result = $result . $column->columnName . ', ';
+                }
+            }
+            $result=substr($result,0,-2).') VALUES (';
+            foreach ( $this->columnList as $column) {
+                if (!$column->columnDataProperties->isPrimary) {
+                    $result = $result .'?, ';
+                }
+            }
+            $result=substr($result,0,-2).');';
+        }
+        return $result;
+    }
+
     public function dropTableSql(){
         return "DROP TABLE ".$this->tableName.';';
+    }
+
+    public function selectAllSql(){
+        return "SELECT * FROM ".$this->tableName.';';
     }
 
     public function addColumn($column){
