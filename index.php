@@ -5,6 +5,7 @@ use Acme\test;
 use DataBase\columnDataProperties;
 use DataBase\MySQLColumn;
 use DataBase\DB;
+use DataBase\MySqlTable;
 
 $obj1=new test();
 echo $obj1->helloStr;
@@ -17,14 +18,25 @@ $replacement='';
 
 echo preg_replace($regExp, $replacement, $testString);
 
-echo "</br>";
 
 $colProp=new columnDataProperties(true);
+$colProp2=new columnDataProperties(false,2, true);
 $column1=new  MySQLColumn('id','INT',$colProp);
 echo $column1->getSQL();
-echo '<br>';
-$db=new DB();
-echo '<br>';
-var_dump($db->getDsn());
 
+$db=new DB();
+
+
+
+$column2=new  MySQLColumn('Count','INT',$colProp2);
+
+$columnList=[$column1];
+$table=new MySqlTable("Counts",$columnList);
+
+$table->addColumn($column2);
+
+var_dump($table);
+echo "<pre>";
+var_dump($table->createTableSql());
+echo "</pre>";
 ?>
