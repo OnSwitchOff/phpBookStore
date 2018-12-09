@@ -20,7 +20,8 @@ echo preg_replace($regExp, $replacement, $testString);
 
 
 $colProp=new columnDataProperties(true);
-$colProp2=new columnDataProperties(false,2, true);
+$colProp->isAutoIncrement=true;
+$colProp2=new columnDataProperties(false,2, false, false, false,'','');
 $column1=new  MySQLColumn('id','INT',$colProp);
 echo $column1->getSQL();
 
@@ -39,4 +40,7 @@ var_dump($table);
 echo "<pre>";
 var_dump($table->createTableSql());
 echo "</pre>";
+
+$db->createTable($table);
+$db->dropTable($table);
 ?>

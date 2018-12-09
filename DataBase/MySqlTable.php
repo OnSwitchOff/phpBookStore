@@ -44,10 +44,16 @@ class MySqlTable
             $result="CREATE TABLE ".$this->tableName." (";
             foreach ( $this->columnList as $column){
                 $result=$result.$column->getSQL().', ';
+                if ($column->columnDataProperties->ForeignKey)
+                    $result=$result."FOREIGN KEY (".$column->columnName.') REFERENCES '.$column->columnDataProperties->ForeignKey.', ';
             }
             $result=substr($result,0,-2).');';
         }
         return $result;
+    }
+
+    public function dropTableSql(){
+        return "DROP TABLE ".$this->tableName.';';
     }
 
     public function addColumn($column){

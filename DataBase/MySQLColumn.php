@@ -66,7 +66,8 @@ namespace DataBase {
             if($this->DataTypeVerification())
             {
                 $this->isValid=true;
-                $result=$result.$this->formatColumnName()." ".$this->columnDataType;
+                $this->formatColumnName();
+                $result=$result.$this->columnName." ".$this->columnDataType;
                 if ($this->isRequiredDataSize)
                     $result=$result.'('.$this->columnDataProperties->columnDataSize.')';
                 if ($this->columnDataProperties->isPrimary)

@@ -14,14 +14,34 @@ namespace DataBase {
         private $user='root';
         private $pass='root';
         private $dsn='mysql:host=127.0.0.1:3306;dbname=test';
+        private $dbh;
 
         function __construct()
         {
             try {
-                $dbh = new PDO($this->dsn, $this->user, $this->pass);
-
+                $this->dbh = new PDO($this->dsn, $this->user, $this->pass);
                 echo "connect";
             } catch (PDOException $e) {
+                print "Error!: " . $e->getMessage() . "<br/>";
+                die();
+            }
+        }
+
+        public function createTable($table){
+            try{
+                $sth = $this->dbh->prepare($table->createTableSql());
+                var_dump($sth->execute());
+            }catch (PDOException $e) {
+                print "Error!: " . $e->getMessage() . "<br/>";
+                die();
+            }
+        }
+
+        public function dropTable($table){
+            try{
+                $sth = $this->dbh->prepare($table->dropTableSql());
+                var_dump($sth->execute());
+            }catch (PDOException $e) {
                 print "Error!: " . $e->getMessage() . "<br/>";
                 die();
             }
